@@ -41,6 +41,7 @@ func processFanOut() {
 
 	for i := 1; i <= WORKERS; i++ {
 		wg.Add(1)
+		//  one input channel, multiple workers consuming from it
 		go worker(i, jobs, results, &wg)
 	}
 
