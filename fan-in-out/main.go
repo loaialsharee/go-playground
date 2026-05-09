@@ -11,7 +11,7 @@ func main() {
 	case "fanOut":
 		processFanOut()
 	case "fanIn":
-		fmt.Println("Fan In process")
+		processFanIn()
 	default:
 		fmt.Println("Invalid process")
 	}
